@@ -35,34 +35,36 @@ s 由英文字母、数字、符号和空格组成
 
 
 def replace_str(s):
-    if len(s) == 0 or len(s) == 1:
-        return len(s)
+    s_length = len(s)
+    if s_length == 0 or s_length == 1:
+        return s_length
     str2 = ""  # a
     max_length = 0
-    for i in range(len(s)):
-        # print("s[i]:%s"%s[i])
-        # print("str2:%s"%str2)
+    for i in range(s_length):
         if s[i] in str2:
-            if max_length < len(str2):
-                max_length = len(str2)  # 保留目前为止的最大值长度
+            str_length = len(str2)
+            if max_length < str_length:
+                max_length = str_length  # 保留目前为止的最大值长度
             if str2[:-1] == s[i]:
                 str2 = str2[-1] + s[i]  # 如果最后的字段和拼接的下一段相符合，那就取出最后一个
             else:
                 index_num = str2.index(s[i]) + 1
-                # print(index_num,444)
+                print(index_num, 444)
                 str2 = str2[index_num:] + s[i]
-                if max_length < len(str2):
-                    max_length = len(str2)
+                str2_length = len(str2)
+                if max_length < str2_length:
+                    max_length = str2_length
         else:
             str2 = str2 + s[i]
-            if max_length < len(str2):
-                max_length = len(str2)
+            str3_length = len(str2)
+            if max_length < str3_length:
+                max_length = str3_length
     if 0 <= max_length <= 5 * 104:
         return max_length
     else:
         return 0
 
 
-str1 = "dvdf"
+str1 = "adsadasdasffdvcvxbfd"
 
 print(replace_str(str1))
