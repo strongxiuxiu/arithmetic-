@@ -51,10 +51,7 @@ class Solution(object):
         """
         max_num = 0
         i = 0
-        index = True
         if isinstance(self.max_length, bool) and len(nums) == 1:
-            print(self.max_length, nums, 333)
-            print(111)
             self.max_length = nums[0]
         while len(nums) > 0:
             if i < len(nums):
