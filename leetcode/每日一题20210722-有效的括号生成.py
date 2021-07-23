@@ -28,7 +28,6 @@ n
 """
 
 
-
 def generateParenthesis(n):
     list1 = []
     str1 = ""
