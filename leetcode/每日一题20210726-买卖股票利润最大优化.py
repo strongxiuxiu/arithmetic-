@@ -99,20 +99,22 @@ class Solution:
         return maxprofit
 
 
-print(Solution().maxProfit(prices))
+# print(Solution().maxProfit(prices))
 
-print(min(1, 2))
+# print(min(1, 2))
+
+prices = [2, 4, 1]
+print("_________")
 
 
-def maxProfit(prices):  # -> int:
-    inf = int(1e9)
-    print(inf, 33)
-    minprice = inf
-    maxprofit = 0
-    for price in prices:
-        maxprofit = max(price - minprice, maxprofit)
-        minprice = min(price, minprice)
-    return maxprofit
+def maxProfit(prices):
+    min_num = int(1e9)
+    max_num = 0
+    for i in prices:
+        max_num = max(i - min_num, max_num)
+        min_num = min(i, min_num)
+        # print(min(i, min_num))
+    print(max_num)
 
 
 maxProfit(prices)
