@@ -77,7 +77,9 @@ def maxArea(height):
 
 
 # max_c = [0, 0]
-height = [4, 3, 2, 1, 4]
+# height = [4, 3, 2, 1, 4]
+
+
 # 输出：16
 # 示例 4：
 #
@@ -86,48 +88,43 @@ height = [4, 3, 2, 1, 4]
 
 # 输出：2
 
+# def maxAreas(height):
+#     """
+#     :type height: List[int]
+#     :rtype: int
+#     """
+#     max_area = 0
+#     for i in range(len(height)):
+#         x1 = i + 1  # 求出每个数据的X轴长度
+#         y1 = height[i]  # 求出第一组数据的Y
+#         for k in range(x1, len(height)):
+#             x2 = k + 1
+#             y2 = height[x2 - 1]
+#             x = x2 - x1
+#             y = min(y1, y2)
+#             if x * y > max_area:
+#                 max_area = x * y
+#     return max_area
+
+# height = [4, 3, 2, 1, 4]
+
 def maxAreas(height):
     """
-    :type height: List[int]
-    :rtype: int
+    # 双指针解法
     """
-    max_area = 0
-    area_list = []
-    index = 0
-    hg = 0
-    max_c = [0, 0]
-    max_area_num = 0
-    # # for i in
-    #     for i in range(len(height)):
-    #         print(max_c,":")
-    #         x = height[i]
-    #         y = i + 1
-    #         if max_c[0] == 0:
-    #             max_c[0] = x
-    #             max_c[1] = y
-    #         else:
-    #             print(x,33333,max_c[0])
-    #             max_area = min(x, max_c[0]) * (y - max_c[1])
-    #             max_c[0] = x
-    #             max_c[1] = y
-    #             max_area_num = max(max_area,max_area_num)
-    #             print(max_area,333)
-
-    # if len(height) == 2:
-
-    # ['(1,1)', '(2,8)', '(3,6)', '(4,2)', '(5,5)', '(6,4)', '(7,8)', '(8,3)', '(9,7)']
-    max_area = 0
-    for i in range(len(height)):
-        x1 = i + 1  # 求出每个数据的X轴长度
-        y1 = height[i]  # 求出第一组数据的Y
-        for k in range(x1, len(height)):
-            x2 = k + 1
-            y2 = height[x2 - 1]
-            x = x2 - x1
-            y = min(y1, y2)
-            if x * y > max_area:
-                max_area = x * y
-    return max_area
+    left, right, max_areas = 0, len(height) - 1, 0
+    while left < right:
+        if height[left] < height[right]:
+            min_num = min(height[left], height[right])
+            max_areas = max(min_num * (right - left), max_areas)
+            left += 1
+        else:
+            min_num = min(height[left], height[right])
+            max_areas = max(min_num * (right - left), max_areas)
+            right -= 1
+    return max_areas
 
 
 print(maxAreas(height))
+
+# print(len(height))
