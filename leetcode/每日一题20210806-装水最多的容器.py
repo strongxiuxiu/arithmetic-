@@ -127,4 +127,25 @@ def maxAreas(height):
 
 print(maxAreas(height))
 
+# a = "1"
+# v = "1"
+# print(a & v)
 # print(len(height))
+from django.db.models import Q
+
+# query_1 = Q(object_name__contains=1)
+# query_2 = Q(entrusting_party__contains=1)
+# if query:
+all_inquire =1
+query_1 = Q(object_name__contains=all_inquire)
+query_2 = Q(entrusting_party__contains=all_inquire)
+query_2 = query_2 | Q(business_type__contains=all_inquire)
+query_2 = query_2 | Q(estimated_price__contains=all_inquire)
+query_2 = query_2 | Q(auction_state__contains=all_inquire)
+query_2 = query_2 | Q(auction_platform__contains=all_inquire)
+query_2 = query_2 | Q(auction_url__contains=all_inquire)
+query_2 = query_2 | Q(transaction_price__contains=all_inquire)
+query = query_1 & query_2
+print(query)
+# else:
+#     query = query_2
