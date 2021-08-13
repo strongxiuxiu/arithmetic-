@@ -55,31 +55,20 @@ IL 和 IM 这样的例子并不符合题目要求，49 应该写作 XLIX，999 �
 通过次数438,920提交次数693,206
 """
 
-# s = "MCMXCIV"
-s = "LVIII"
-
+s = "MCMXCIV"
+# s = "LVIII"
+s = "III"
 
 def intToRoman(s):
     dict1 = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
     age = 0
-    # while True:
-
     for i in range(len(s)):
-        print(i)
-        # if i + 1 < len(s)+1 and dict1[s[i]] > dict1[s[i + 1]]:
-        #     print(i)
-            # print(dict1[s[i]], 9999, dict1[s[i + 1]])
-    #         age += dict1[s[i]]
-    #
-        # elif i + 1 < len(s) and dict1[s[i]] <= dict1[s[i + 1]]:
-        #     print(i)
-    #         # nun = dict1[s[i + 1]] - dict1[s[i]]
-    #         age += dict1[s[i + 1]] - dict1[s[i]]
-    #         # print(dict1[s[i]], 9999, dict1[s[i + 1]])
-    #     else:
-    #         age += dict1[s[i]]
-    #
-    # print(age)
+        if i < len(s)-1 and dict1[s[i]] < dict1[s[i + 1]]:
+            age -= dict1[s[i]]
+        else:
+            age += dict1[s[i]]
+
+    print(age)
 
 
 intToRoman(s)

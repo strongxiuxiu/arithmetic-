@@ -1,13 +1,0 @@
-
-Cpython:S125‰"Remove this commented out code.(ïÌÕÏûÿÿÿÿ8ã«íóª/
-Gpython:S1481."(Remove the unused local variable "str2".(åÿ”Ò8ˆ›œ«/
-=python:S125@"Remove this commented out code.(ÆÔœ¦8£öí›«/
-}python:S1542%"YRename function "generateParenthesis" to match the regular expression ^[a-z_][a-z0-9_]*$.(Äıëûÿÿÿÿ8»™óª/
-Bpython:S125w"Remove this commented out code.(ƒÍÏşÿÿÿÿ8Î½âôª/
-Opython:S1751,"1Refactor this loop to do more than one iteration.(÷œÖ8Ì•œ«/
-Lpython:S14811"(Remove the unused local variable "str2".(»Î‚©úÿÿÿÿ8Ø™¦œ«/
-Upython:S17518"1Refactor this loop to do more than one iteration.(ì¥ø›ıÿÿÿÿ8Ì•œ«/
-Ppython:S1751;"1Refactor this loop to do more than one iteration.(µÌ€…8Ì•œ«/
-xpython:S3776%"TRefactor this function to reduce its Cognitive Complexity from 21 to the 15 allowed.(Äıëûÿÿÿÿ8ˆ›œ«/
-Gpython:S1481+"(Remove the unused local variable "str2".(¢‚ú”8Ø™¦œ«/
-Opython:S1481ˆ"*Remove the unused local variable "r_list".(Ò€¿éıÿÿÿÿ8©··öª/

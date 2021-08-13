@@ -1,0 +1,15 @@
+
+Hpython:S1481")Remove the unused local variable "max_c".( °»£8ÅªÊ“±/
+Hpython:S1481")Remove the unused local variable "index".(Ô˝°µ8ÅªÊ“±/
+ipython:S100"KRename method "maxArea" to match the regular expression ^[a-z_][a-z0-9_]*$.(ÊãøÈ8ÅªÊ“±/
+lpython:S1542"MRename function "maxArea" to match the regular expression ^[a-z_][a-z0-9_]*$.(µ∂åƒ8ÅªÊ“±/
+Lpython:S1481"-Remove the unused local variable "area_list".(Âπ’¿8ÅªÊ“±/
+<python:S125@"Remove this commented out code.(‰®†8ÅªÊ“±/
+<python:S125["Remove this commented out code.(Ñü¸P8ÅªÊ“±/
+Epython:S1481"&Remove the unused local variable "hg".(ƒÂûÅ8ÅªÊ“±/
+=python:S125m"Remove this commented out code.(∞¿Ò€8ÅªÊ“±/
+rpython:S1542o"NRename function "maxAreas" to match the regular expression ^[a-z_][a-z0-9_]*$.(≈ƒ£˚ˇˇˇˇ8ÅªÊ“±/
+=python:S125+"Remove this commented out code.(Àù„Ù8ÅªÊ“±/
+Opython:S1481"0Remove the unused local variable "max_area_num".(øı‡Å8ÅªÊ“±/
+Bpython:S125O"Remove this commented out code.(Ú‚áé˙ˇˇˇˇ8ÅªÊ“±/
+Cpython:S125Ç"Remove this commented out code.(± ∫Û˛ˇˇˇˇ8∞ö„Ù±/

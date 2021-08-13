@@ -1,0 +1,5 @@
+
+bpython:S100"KRename method "maxArea" to match the regular expression ^[a-z_][a-z0-9_]*$.(ζ‹Ώι
+Cpython:S1481",Remove the unused local variable "max_area".(ΐμα"
+Fpython:S1481".Remove the unused local variable "stare_area".(®¬¥¦
+epython:S1542"MRename function "maxArea" to match the regular expression ^[a-z_][a-z0-9_]*$.(µ¶Δ
