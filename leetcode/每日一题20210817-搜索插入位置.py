@@ -100,3 +100,5 @@ def searchInsert1(nums, target):
 
 
 print(searchInsert1(nums, target))
+
+print(1111)
