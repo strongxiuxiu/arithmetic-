@@ -59,7 +59,7 @@ target = 2
 
 #
 nums1 = [1, 3, 5, 6]
-nums = [1,3,5,6]
+nums = [1, 3, 5, 6]
 target = 0
 
 
@@ -71,7 +71,7 @@ def searchInsert1(nums, target):
         if target < median:
             searchInsert1(nums[:tar - 1], target)  # 取左边的
         elif target > median:
-            searchInsert1(nums[tar+1:], target)  # 取右边的
+            searchInsert1(nums[tar + 1:], target)  # 取右边的
         else:
             return nums1.index(median)
     else:
@@ -100,5 +100,11 @@ def searchInsert1(nums, target):
 
 
 print(searchInsert1(nums, target))
-
+5
 print(1111)
+
+page = 0
+page = (100+10-1)// 10
+# if page == 0:
+#     page = 1
+print(page)
