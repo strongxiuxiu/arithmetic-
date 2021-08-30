@@ -52,6 +52,7 @@ letter = {'l': '.-..', 'g': '--.', 'v': '...-', 'i': '..', 'n': '-.', 'f': '..-.
 #     # print(y, x)
 #     dict_letter[y] = x
 # print(dict_letter)
+
 def uniqueMorseRepresentations(words):
     """
     :type words: List[str]
