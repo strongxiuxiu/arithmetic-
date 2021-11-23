@@ -16,7 +16,7 @@
 输出：4
 示例 3：
 
-输入：s = "luffy is still joyboy"
+输入：s = "luffy is still joyboy" 吧
 输出：6
 
 
@@ -38,3 +38,7 @@ def clear_sp(star1):
 
 
 print(clear_sp(star1))
+print(type("11,22".replace(",", '')))
+
+
+
