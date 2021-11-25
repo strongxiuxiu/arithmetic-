@@ -59,6 +59,4 @@ def letterCombinations(digits):
 
 
 if __name__ == '__main__':
-    # a = "123456"
-    # print(a[1:])
     print(letterCombinations("23"))
