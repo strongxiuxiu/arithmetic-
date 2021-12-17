@@ -62,7 +62,7 @@ def merge(left_list, right_list):
 
 
 if __name__ == '__main__':
-    N = 6000
+    N = 2000
     alist = [random.randint(1, 1000) for i in range(N)]
     begin_time = time()
     for i in range(8):  # 这里代表8次
