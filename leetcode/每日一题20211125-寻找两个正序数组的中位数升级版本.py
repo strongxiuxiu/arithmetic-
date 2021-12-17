@@ -58,12 +58,13 @@ def findMedianSortedArrays(nums1, nums2):
         left = list_length // 2 - 1
         right = left + 1
         even_odd = True
-
     else:  # 奇数
         left = list_length // 2
         even_odd = False
+    median_num = 0
     if even_odd:
         first_left = first_right = 0
+
         for i in range(list_length):
             if nums1[first_left] > nums2[first_right]:
                 first_right += 1
@@ -72,7 +73,8 @@ def findMedianSortedArrays(nums1, nums2):
 
             # else:
             #     first_left += 1
-            if i == left:
+            if i < left:
+                median_num_left = num1[first_left]
                 return
 
 
