@@ -61,20 +61,46 @@ def merge(left_list, right_list):
     return merge_list
 
 
+
+def insertions_sort(a_list):
+    if len(a_list) >= 2:
+        for j in range(1, len(a_list) + 1):
+            # j 等于下标的从元素列表第二个开始取值
+            while j < len(a_list) and j - 1 >= 0:
+                if a_list[j - 1] > a_list[j]:  # > 升序  < 降序
+                    a_list[j], a_list[j - 1] = a_list[j - 1], a_list[j]
+                    j = j - 1
+                else:
+                    break
+    return a_list
+
+
 if __name__ == '__main__':
-    N = 2000
+    N = 10000
     alist = [random.randint(1, 1000) for i in range(N)]
+    print(alist,4445)
     begin_time = time()
     for i in range(8):  # 这里代表8次
         insertion_sort(alist)
     end_time = time()
     run_time = end_time - begin_time
     print("这是插入排序，时间复杂度为8n^2的排序{}个元素运行的时间:{}".format(N, run_time))
-
+    # print(alist,3334)
+    alist = [random.randint(1, 1000) for i in range(N)]
     begin_time = time()
     # print('原列表的顺序{}'.format(alist))
     for i in range(64):  # 这里代表8次
-        alist = merge_sort(alist)
+        merge_sort(alist)
     end_time = time()
     run_time = end_time - begin_time
     print('这是并归排序，时间复杂度为64nlg(n)的排序{}个元素所运行的时间：{}'.format(N, run_time))
+
+    alist = [random.randint(1, 1000) for i in range(N)]
+    begin_time = time()
+    for i in range(8):  # 这里代表8次
+        insertions_sort(alist)
+        # print()
+
+    end_time = time()
+    run_time = end_time - begin_time
+    print("这是插入排序，时间复杂度为8n^2的排序{}个元素运行的时间:{}".format(N, run_time))
