@@ -28,3 +28,7 @@ if __name__ == '__main__':
     # list1[1],list1[2] = list1[2],list1[1]
     # print(list1)
     select_sort(list1)
+
+
+
+

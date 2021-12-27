@@ -1,10 +1,10 @@
 
 ;python:S125@"Remove this commented out code.(Ù¦ý³ûÿÿÿÿ
 lpython:S1542%"ORename function "maxProfit" to match the regular expression ^[a-z_][a-z0-9_]*$.(Íº®¥ýÿÿÿÿ
-6python:S125F"Remove this commented out code.(ÆÔœ¦
 mpython:S1542J"PRename function "maxProfits" to match the regular expression ^[a-z_][a-z0-9_]*$.(ýÂ¼€ýÿÿÿÿ
+lpython:S1542n"ORename function "maxProfit" to match the regular expression ^[a-z_][a-z0-9_]*$.(Íº®¥ýÿÿÿÿ
 6python:S125"Remove this commented out code.(•ª¥‘
 ipython:S100["MRename method "maxProfit" to match the regular expression ^[a-z_][a-z0-9_]*$.(âß†›úÿÿÿÿ
 Lpython:S1066Q"/Merge this if statement with the enclosing one.(ÞÔùëýÿÿÿÿ
 6python:S125!"Remove this commented out code.(¡«ŸÖ
-lpython:S1542n"ORename function "maxProfit" to match the regular expression ^[a-z_][a-z0-9_]*$.(Íº®¥ýÿÿÿÿ
+6python:S125F"Remove this commented out code.(ÆÔœ¦
