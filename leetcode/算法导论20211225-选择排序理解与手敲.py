@@ -17,6 +17,7 @@ def selection_sort(list_1):
         list_1[i], list_1[list_1.index(min_num)] = list_1[list_1.index(min_num)], list_1[i]
 
 
+
 if __name__ == '__main__':
     list1 = [55, 78678, 9, 1, 4, -3, 8, 9, 0, 444, 89, 4, 234]
     for i in list1:
