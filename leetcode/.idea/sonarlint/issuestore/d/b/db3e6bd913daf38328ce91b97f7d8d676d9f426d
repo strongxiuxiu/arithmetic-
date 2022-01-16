@@ -1,5 +1,5 @@
 
-Dpython:S1481P"%Remove the unused local variable "i".(¹Ï¼«8¢½ˆ–Ü/
-Dpython:S1481Y"%Remove the unused local variable "i".(¹Ï¼«8“Œý¯Þ/
 kpython:S2208"GImport only needed names or import the module and then use its members.(–ùÏÒÿÿÿÿÿ8éãÝ•Ü/
+Dpython:S1481Y"%Remove the unused local variable "i".(¹Ï¼«8“Œý¯Þ/
+Dpython:S1481P"%Remove the unused local variable "i".(¹Ï¼«8¢½ˆ–Ü/
 Dpython:S1481b"%Remove the unused local variable "i".(¹Ï¼«8¡âÿ¯Þ/

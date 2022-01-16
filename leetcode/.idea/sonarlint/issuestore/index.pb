@@ -71,3 +71,5 @@ G.idea/sonarlint/issuestore/3/5/35021ff9d16ff4c54d3644f235e2b95c35f60d14,f\9\f9
 Q算法图解20211230-导论实在是不适合自己，潜心修炼算法图解.py,6\5\65af407847d040d81bf110b94c10dd363818ff87
 Z
 *算法导论20211227-第二章分治法.py,e\c\ecd5133425746d0df58ab4f062dade5510144495
+p
+@算法图解20220112-haskell快速排序递归sum函数理解.py,a\f\af91bebec370fddd4afdbd20ae12f2123284561b
