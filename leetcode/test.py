@@ -55,3 +55,34 @@ print(Node('name'))
 link_list = LinkList()
 link_list.add_item(node1)
 print(link_list.length, link_list.header)
+
+import random
+
+
+# 年假后的快速排序试敲
+def quick_sort_(list1):
+    if len(list1) < 2:
+        return list1
+    pov = list1[0]
+    left_list = []
+    right_list = []
+    for i in range(1,len(list1)):
+        if list1[i] > pov:
+            right_list.append(list1[i])
+        else:
+            left_list.append(list1[i])
+    return quick_sort_(left_list) + [pov] + quick_sort_(right_list)
+
+
+def create_random_list(l, r, num):
+    new_list = []
+    for i in range(num):
+        new_list.append(random.randint(l, r))
+    return new_list
+
+
+if __name__ == '__main__':
+    l = create_random_list(-10, 10, 10)
+    print(l)
+
+    print(quick_sort_(l))

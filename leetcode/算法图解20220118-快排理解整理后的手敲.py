@@ -27,6 +27,21 @@ def create_random_list(length: int, l: int, r: int):
     return list1
 
 
+# 年假后的快速排序试敲
+def quick_sort_(list1):
+    if len(list1) < 2:
+        return list1
+    pov = list1[0]
+    left_list = []
+    right_list = []
+    for i in range(1, len(list1)):
+        if list1[i] > pov:
+            right_list.append(list1[i])
+        else:
+            left_list.append(list1[i])
+    return quick_sort_(left_list) + [pov] + quick_sort_(right_list)
+
+
 if __name__ == '__main__':
     random_list = create_random_list(100, 10, 200)
     print(random_list)
