@@ -44,5 +44,6 @@ def quick_sort_(list1):
 
 if __name__ == '__main__':
     random_list = create_random_list(100, 10, 200)
+
     print(random_list)
     print(quick_sort(random_list))
