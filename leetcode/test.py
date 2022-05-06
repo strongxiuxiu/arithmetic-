@@ -82,7 +82,23 @@ def create_random_list(l, r, num):
 
 
 if __name__ == '__main__':
-    l = create_random_list(-10, 10, 10)
-    print(l)
+    # l = create_random_list(-10, 10, 10)
+    # print(l)
+    a = [1,2,3,37,8 ]
+    print(a.index(37))
+    a = [1,2,3,4,5,6,7,8,9,10]
+    print(a[3:6])
+    #
+    # print(a[-1])
+    # print(quick_sort_(l))
+    #
+    # for i in range(9):
+    #     print(i)
+    # b = "[3,5,65,67,8]"
+    # print(eval(b))
+    # for i in eval(b):
+    #     print(i)
+    # print(zip(a, b))
 
-    print(quick_sort_(l))
+
+
